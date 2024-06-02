@@ -33,6 +33,10 @@ h1 {
     cursor: pointer;
 }
 
+.choices img {
+    max-width: 250px;
+}
+
 .choices button:hover {
     background: #274442;
 }
@@ -70,7 +74,7 @@ h1 {
     .game-area {
         margin: 10px;
     }
-    #play-button img {
+    .choices img {
         max-width: 85px;
     }
 
@@ -101,7 +105,7 @@ h1 {
         margin-right: 10px;
         margin-left: 10px;
     }
-    #play-button img {
+   .choices img {
         max-width: 135px;
     }
 
@@ -132,7 +136,7 @@ h1 {
         margin-right: 10px;
         margin-left: 10px;
     }
-    #play-button img {
+    .choices img {
         max-width: 220px;
     }
 
