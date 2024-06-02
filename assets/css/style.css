@@ -20,7 +20,31 @@ h1 {
 
 /* Game Area */
 
+.instructionsArea {
+    background-color: #274442;
+    width: 100%;
+    font-family: 'Lucida Sans Regular', Geneva, Verdana, sans-serif;
+    color: white;
+    line-height: normal;
+    padding-bottom: 20px;
+}
+
+.instructionsArea h3 {
+    font-size: 2rem;
+    text-wrap: wrap;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.instructionsArea p {
+    line-height: normal;
+    text-wrap: wrap;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 .choices {
+    margin-top: 30px;
     margin-bottom: 30px;
 }
 
@@ -67,7 +91,16 @@ h1 {
 /* Media Queries */
 
 /* Screens smaller than 500px / Small Mobiles */
-@media (max-width: 500px) {
+@media (max-width: 550px) {
+
+    .instructionsArea h3, p {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .instructionsArea h3 {
+        font-size: 1.5rem;
+    }
 
     .game-area {
         margin: 10px;
@@ -97,7 +130,7 @@ h1 {
 }
 
 /* Screens larger than 501px */
-@media (min-width: 501px) {
+@media (min-width: 551px) {
 
     .game-area {
         margin-right: 10px;
@@ -109,6 +142,7 @@ h1 {
 
     h1 {
         font-size: 3.5rem;
+        text-wrap: wrap;
     }
 
     #playersDisplay, #computersDisplay {

@@ -10,14 +10,20 @@
 </head>
 <body>
     <h1 id="heading">Plant - Water - Fire!</h1>
-    <div class="instructions-area">
+    <div class="instructionsArea">
         <h3>Compete against the computer to win.</h3>
+        <p>Choose your choice of plant, fire or water to beat the computer.</p>
+        <p>Fire burns Plant (Fire wins).</p>
+        <p>Water extinguishes Fire (Water wins).</p>
+        <p>Plant absorbs Water (Plant wins).</p>
     </div>
 
     <div class="game-area">
         <div class="choices">
     <button onclick = "playGame('Plant')"><img src="assets/images/plant.png" alt="plant"></button>
+    &nbsp;
     <button onclick = "playGame('Water')"><img src="assets/images/water.png" alt="water"></button>
+    &nbsp;
     <button onclick = "playGame('Fire')"><img src="assets/images/fire.png" alt="fire"></button>
         </div>
 
@@ -27,13 +33,13 @@
     </div>
 
     <div id="scoreArea">
-    <div class="scoreTally">Your Score:
-        <span id="playersScoreTally">0</span>
-    </div>
-
-    <div class="scoreTally">Computers Score:
-        <span id="computersScoreTally">0</span>
-    </div>
+        <div class="scoreTally">Your Score: 
+            <span id="playersScoreDisplay">0</span>
+        </div>
+    
+        <div class="scoreTally">Computer Score: 
+            <span id="computersScoreDisplay">0</span>
+        </div>
     </div>  
 
     <script src="assets/javascript/script.js"></script>

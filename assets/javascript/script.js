@@ -2,10 +2,6 @@ const choices = ["Plant", "Water", "Fire"];
 const playersChoice = document.getElementById("playersChoice");
 const computersChoice = document.getElementById("computersChoice");
 const resultDisplay = document.getElementById("resultDisplay");
-const playersScoreTally = document.getElementById("playersScoreTally");
-const computersScoreTally = document.getElementById("computersScoreTally");
-let playersScore = 0;
-let computersScore = 0;
 
 function playGame(playersChoice) {
 
@@ -32,19 +28,5 @@ function playGame(playersChoice) {
     playersDisplay.textContent = `Players Choice: ${playersChoice}`;
     computersDisplay.textContent = `Computers Choice: ${computersChoice}`;
     resultDisplay.textContent = result;
-
-    resultDisplay.classList.remove();
-
-    switch(result){
-        case "You WIN!":
-            resultDisplay.classList.add();
-            playersScore++;
-            playersScoreTally.textContent = "playersScore";
-            break;
-            case "You LOSE!":
-                resultDisplay.classList.add();
-                computersScore++;
-                computersScoreTally.textContent = "computersScore";
-                break;
     }
-}
+    
