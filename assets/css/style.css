@@ -84,7 +84,8 @@ h1 {
 .scoreTally {
     color: white;
     font-size: 1.5rem;
-    padding: 10px;
+    padding: 5px;
+    line-height: normal;
 }
 
 
@@ -164,6 +165,15 @@ h1 {
 /* Screens larger than 750px */
 @media (min-width: 750px) {
 
+    .instructionsArea h3, p {
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .instructionsArea h3 {
+        font-size: 1.5rem;
+    }
+
     .game-area {
         margin-right: 10px;
         margin-left: 10px;
@@ -174,21 +184,24 @@ h1 {
 
     h1 {
         font-size: 5rem;
+        margin: 5px;
     }
 
     #playersDisplay, #computersDisplay {
-        font-size: 2rem;
+        font-size: 1.5rem;
+        margin-top: 5px;
     }
     
     #resultDisplay {
-        font-size: 5rem;
+        font-size: 4rem;
     }
 
     #playersScore, #computersScore {
         color: white;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
         font-size: 2rem;
+        padding: 0px;
     }
 }
 
