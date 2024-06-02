@@ -16,19 +16,25 @@
 
     <div class="game-area">
         <div class="choices">
-    <button onclick = "playGame('plant')"><img src="assets/images/plant.png" alt="plant"></button>
-    <button onclick = "playGame('water')"><img src="assets/images/water.png" alt="water"></button>
-    <button onclick = "playGame('fire')"><img src="assets/images/fire.png" alt="fire"></button>
+    <button onclick = "playGame('Plant')"><img src="assets/images/plant.png" alt="plant"></button>
+    <button onclick = "playGame('Water')"><img src="assets/images/water.png" alt="water"></button>
+    <button onclick = "playGame('Fire')"><img src="assets/images/fire.png" alt="fire"></button>
         </div>
 
-        <div id="playersChoice">Players Choice:</div>
-        <div id="computersChoice">Computers Choice:</div>
-        <div id="resultDisplay">Player Wins!</div>
+        <div id="playersDisplay">Your Choice:</div>
+        <div id="computersDisplay">Computers Choice:</div>
+        <div id="resultDisplay"></div>
     </div>
-    <div class="score-area">
-        <div id="playersScore">Players Score:</div>
-        <div id="computersScore">Computers Score:</div>
+
+    <div id="scoreArea">
+    <div class="scoreTally">Your Score:
+        <span id="playersScoreTally">0</span>
     </div>
+
+    <div class="scoreTally">Computers Score:
+        <span id="computersScoreTally">0</span>
+    </div>
+    </div>  
 
     <script src="assets/javascript/script.js"></script>
 </body>

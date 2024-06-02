@@ -41,7 +41,7 @@ h1 {
     background: #274442;
 }
 
-#playersChoice, #computersChoice {
+#playersDisplay, #computersDisplay {
     font-size: 2rem;
 }
 
@@ -52,17 +52,15 @@ h1 {
 
 /* Score Area */
 
-.score-area {
+#scoreArea {
     background-color: #274442;
     width: 100%;
-    margin: 20px, 10px;
 }
 
-#playersScore, #computersScore {
+.scoreTally {
     color: white;
-    margin-top: 10px;
-    margin-bottom: 10px;
     font-size: 1.5rem;
+    padding: 10px;
 }
 
 
@@ -82,7 +80,7 @@ h1 {
         font-size: 2rem;
     }
 
-    #playersChoice, #computersChoice {
+    #playersDisplay, #computersDisplay {
         font-size: 1.5rem;
     }
     
@@ -113,7 +111,7 @@ h1 {
         font-size: 3.5rem;
     }
 
-    #playersChoice, #computersChoice {
+    #playersDisplay, #computersDisplay {
         font-size: 2rem;
     }
     
@@ -144,7 +142,7 @@ h1 {
         font-size: 5rem;
     }
 
-    #playersChoice, #computersChoice {
+    #playersDisplay, #computersDisplay {
         font-size: 2rem;
     }
     
