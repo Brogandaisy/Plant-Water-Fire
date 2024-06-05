@@ -2,6 +2,10 @@ const choices = ["Plant", "Water", "Fire"];
 const playersChoice = document.getElementById("playersChoice");
 const computersChoice = document.getElementById("computersChoice");
 const resultDisplay = document.getElementById("resultDisplay");
+const playersScoreDisplay = document.getElementById("playersScoreDisplay");
+const computersScoreDisplay = document.getElementById("computersScoreDisplay");
+let playersScore = 0;
+let computersScore = 0;
 
 function playGame(playersChoice) {
 
@@ -24,9 +28,19 @@ function playGame(playersChoice) {
             break;
         }
     }
-
+    
     playersDisplay.textContent = `Players Choice: ${playersChoice}`;
     computersDisplay.textContent = `Computers Choice: ${computersChoice}`;
     resultDisplay.textContent = result;
+
+    switch(result){
+        case "YOU WIN!":
+            playerScore++;
+            playerScoreDisplay.textContent = playerScore;
+            break;
+        case "YOU LOSE!":
+            computerScore++;
+            computerScoreDisplay.textContent = computerScore;
+            break;
+        }
     }
-    
