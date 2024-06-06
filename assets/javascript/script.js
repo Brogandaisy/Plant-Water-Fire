@@ -1,3 +1,7 @@
+let modal = document.getElementById("myModal");        
+let btn = document.getElementById("myInstructions");
+let span = document.getElementsByClassName("close")[0];
+
 const choices = ["Plant", "Water", "Fire"];
 const playersChoice = document.getElementById("playersChoice");
 const computersChoice = document.getElementById("computersChoice");
@@ -53,4 +57,21 @@ function updatePlayerScore() {
  */
 function updateComputerScore() {
     computersScoreDisplay.innerText = computerScore.toString();
+}
+
+/**
+ * When the 'Intructions' button is clicked, a pop-up/modal is created displaying the instructions for the player.
+ */
+btn.onclick = function() {
+    modal.style.display = "block"
+}
+
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
 }

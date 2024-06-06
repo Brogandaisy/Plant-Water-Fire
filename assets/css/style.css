@@ -30,7 +30,7 @@ h1 {
 }
 
 .instructionsArea h3 {
-    font-size: 2rem;
+    font-size: 3rem;
     text-wrap: wrap;
     margin-left: 20px;
     margin-right: 20px;
@@ -43,8 +43,47 @@ h1 {
     margin-right: 20px;
 }
 
+/* modal from w3schools */
+/* The Modal (background) */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+    background-color: #d8e2dc;
+  }
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+
+  /* The Close Button */
+  .close {
+    color: #274442
+    float: top;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+/* Game Area */
+
 .choices {
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 30px;
 }
 
@@ -79,6 +118,7 @@ h1 {
 #scoreArea {
     background-color: #274442;
     width: 100%;
+    margin-bottom: 30px;
 }
 
 .scoreTally {
@@ -88,7 +128,9 @@ h1 {
     line-height: normal;
 }
 
-.restartButton {
+/* Restart Area */
+
+.hoverButton {
     background-color: #274442;
     color: white;
     font-size: 1rem;
@@ -98,11 +140,10 @@ h1 {
     cursor: pointer;
 }
 
-.restartButton:hover {
+.hoverButton:hover {
     background: white;
     color: #274442;
 }
-
 
 /* Media Queries */
 
