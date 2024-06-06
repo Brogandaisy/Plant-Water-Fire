@@ -43,13 +43,13 @@ function playGame(playersChoice) {
 }
 
 /**
- *  docstring..
+ *  Updates the players score when they see 'You WIN!'.
  */
 function updatePlayerScore() {
     playersScoreDisplay.innerText = playerScore.toString();
 }
 /**
- *  docstring..
+ *  Updates the computers score when they see 'You LOSE!'.
  */
 function updateComputerScore() {
     computersScoreDisplay.innerText = computerScore.toString();

@@ -88,6 +88,21 @@ h1 {
     line-height: normal;
 }
 
+.restartButton {
+    background-color: #274442;
+    color: white;
+    font-size: 1rem;
+    padding: 10px;
+    margin: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.restartButton:hover {
+    background: white;
+    color: #274442;
+}
+
 
 /* Media Queries */
 
