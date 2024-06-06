@@ -4,8 +4,8 @@ const computersChoice = document.getElementById("computersChoice");
 const resultDisplay = document.getElementById("resultDisplay");
 const playersScoreDisplay = document.getElementById("playersScoreDisplay");
 const computersScoreDisplay = document.getElementById("computersScoreDisplay");
-let playersScore = 0;
-let computersScore = 0;
+let playerScore = 0;
+let computerScore = 0;
 
 function playGame(playersChoice) {
 
@@ -31,16 +31,26 @@ function playGame(playersChoice) {
     
     playersDisplay.textContent = `Players Choice: ${playersChoice}`;
     computersDisplay.textContent = `Computers Choice: ${computersChoice}`;
-    resultDisplay.textContent = result;
-
-    switch(result){
-        case "YOU WIN!":
-            playerScore++;
-            playerScoreDisplay.textContent = playerScore;
-            break;
-        case "YOU LOSE!":
-            computerScore++;
-            computerScoreDisplay.textContent = computerScore;
-            break;
-        }
+    if (result === "You WIN!") {
+        playerScore++;
+        updatePlayerScore();
     }
+    if (result === "You LOSE!") {
+        computerScore++;
+        updateComputerScore();
+    }
+    resultDisplay.textContent = result;
+}
+
+/**
+ *  docstring..
+ */
+function updatePlayerScore() {
+    playersScoreDisplay.innerText = playerScore.toString();
+}
+/**
+ *  docstring..
+ */
+function updateComputerScore() {
+    computersScoreDisplay.innerText = computerScore.toString();
+}
