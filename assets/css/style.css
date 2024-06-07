@@ -117,6 +117,7 @@ p {
 
 .choices img {
     max-width: 250px;
+    padding: 1px;
 }
 
 .choices button:hover {
