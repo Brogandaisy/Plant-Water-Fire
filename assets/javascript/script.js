@@ -33,6 +33,9 @@ function playGame(playersChoice) {
         }
     }
     
+    /**
+     * Updates players and computers scores when they get a particular message after they choose their icon.
+     */
     playersDisplay.textContent = `You Chose: ${playersChoice}`;
     computersDisplay.textContent = `Computer Chose: ${computersChoice}`;
     if (result === "You WIN!") {

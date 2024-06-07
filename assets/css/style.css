@@ -63,6 +63,7 @@ p {
 }
 
 /* modal from w3schools */
+
 /* The Modal (background) */
 .modal {
     display: none; 
@@ -117,7 +118,7 @@ p {
 
 .choices img {
     max-width: 250px;
-    padding: 1px;
+    padding-right: 2px;
 }
 
 .choices button:hover {
