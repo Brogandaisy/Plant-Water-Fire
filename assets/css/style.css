@@ -47,9 +47,9 @@ h1 {
 /* The Modal (background) */
 .modal {
     display: none; 
-    position: fixed; 
+    position: absolute; 
     z-index: 1; 
-    padding-top: 100px;
+    padding-top: 50px;
     left: 0;
     top: 0;
     width: 100%; 
@@ -88,8 +88,9 @@ h1 {
 
 .choices button {
     max-width: 250px;
-    margin: 0 10px;
-    border-radius: 250px;
+    max-height: 300px;
+    margin: 0.5px;
+    border-radius: 400px;
     border: none;
     background-color: white;
     cursor: pointer;
