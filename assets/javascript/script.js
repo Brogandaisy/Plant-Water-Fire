@@ -33,8 +33,8 @@ function playGame(playersChoice) {
         }
     }
     
-    playersDisplay.textContent = `Players Choice: ${playersChoice}`;
-    computersDisplay.textContent = `Computers Choice: ${computersChoice}`;
+    playersDisplay.textContent = `You Chose: ${playersChoice}`;
+    computersDisplay.textContent = `Computer Chose: ${computersChoice}`;
     if (result === "You WIN!") {
         playerScore++;
         updatePlayerScore();
@@ -55,9 +55,11 @@ function playGame(playersChoice) {
 function checkWinner() {
     if (playerScore === 10) {
         resultDisplay.textContent = "You win the game!";
+        resetGame();
 
     } else if (computerScore === 10) {
         resultDisplay.textContent = "Computer wins the game!";
+        resetGame();
     }
 }
 
