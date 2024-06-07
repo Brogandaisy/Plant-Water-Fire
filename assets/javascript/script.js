@@ -43,7 +43,32 @@ function playGame(playersChoice) {
         computerScore++;
         updateComputerScore();
     }
+
     resultDisplay.textContent = result;
+    checkWinner(); // Check for a winner after updating the scores
+
+}
+
+/**
+ * Checks if either player or computer has reached a score of 10 and displays the winning message.
+ */
+function checkWinner() {
+    if (playerScore === 10) {
+        resultDisplay.textContent = "You win the game!";
+
+    } else if (computerScore === 10) {
+        resultDisplay.textContent = "Computer wins the game!";
+    }
+}
+
+/**
+ * Resets the game scores.
+ */
+function resetGame() {
+    playerScore = 0;
+    computerScore = 0;
+    updatePlayerScore();
+    updateComputerScore();
 }
 
 /**

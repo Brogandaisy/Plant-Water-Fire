@@ -68,8 +68,7 @@ h1 {
 
   /* The Close Button */
   .close {
-    color: #274442
-    float: top;
+    color: #274442;
     font-size: 1.5rem;
     font-weight: bold;
   }
@@ -89,7 +88,7 @@ h1 {
 
 .choices button {
     max-width: 250px;
-    margin: 0, 10px;
+    margin: 0 10px;
     border-radius: 250px;
     border: none;
     background-color: white;
