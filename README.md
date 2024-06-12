@@ -1,7 +1,7 @@
 # Plant, Water, Fire! 
 Project 2 - Brogan Carpenter
 
-https://brogandaisy.github.io/Plant-Water-Fire/
+[View Live Project](https://brogandaisy.github.io/Plant-Water-Fire/)
 
 # Plant, Water, Fire!
 
@@ -14,7 +14,6 @@ Plant, Water, Fire! is a modern twist on the classic Rock-Paper-Scissors game, d
 
 1. [UX](#user-experience-ux)
     - [User Stories](#user-stories)
-    - [New Members](#new-members)
 2. [Design](#design)
     - [Wireframes](#wireframes)
 3. [Deployment](#deployment)
@@ -42,8 +41,8 @@ The games design has been chosen to be simple, yet match the games theme. Differ
 ## Wireframes
 
 ### Desktop Wireframes
-![desktop-wireframe](assets/images/brighton-beach-desktop-wireframe.png)
-![desktop-wireframe](assets/images/)
+![desktop-wireframe](assets/images/pwf.wireframedesktop.png)
+![desktop-wireframe](assets/images/pwf.instructions.wireframedesktop.png)
 
 ### Mobile Wireframes
 ![mobile-wireframe](assets/images/pwf.mobilewireframe.png)
@@ -73,7 +72,7 @@ Using Github and Gitpod to deploy my project.
 4. This takes a few minutes to deploy, and will be found on the righthand-side of the repository dashboard page. 
 
 ### Deployment on Github
-![github-deployment](assets/images/brighton-beach-deployment.png)
+![github-deployment](assets/images/pwf.deployment.png)
 
 
 ## Features
@@ -187,7 +186,7 @@ function resetGame() {
 
 ## Testing
 ## Browser Testing
-I used ['Browser Stack'](https://live.browserstack.com/dashboard#os=Windows&os_version=11&browser=Chrome&browser_version=124.0&zoom_to_fit=true&full_screen=true&url=https%3A%2F%2Fbrogandaisy.github.io%2Fbrighton-beach-yoga%2Fabout.html&speed=1) to test a range of web browswers on desktop and mobile. See an example of tests below.
+I used ['Browser Stack'](https://live.browserstack.com/dashboard#os=android&os_version=13.0&device=Samsung+Galaxy+Z+Fold+5&device_browser=edge&zoom_to_fit=true&full_screen=true&url=https%3A%2F%2Fbrogandaisy.github.io%2FPlant-Water-Fire%2F&speed=1) to test a range of web browswers on desktop and mobile. See an example of tests below.
 <table>
   <thead>
     <tr>
@@ -200,20 +199,20 @@ I used ['Browser Stack'](https://live.browserstack.com/dashboard#os=Windows&os_v
   <tbody>
     <tr>
       <td>Chrome</td>
-      <td>Google Pixel 8 and Desktop Surface 5</td>
-      <td>All the pages format correctly. The links, nav and form all work well.</td>
+      <td>iPhone 15 and Desktop Surface 5</td>
+      <td>All the pages format correctly. Game functionality and buttons work well.</td>
       <td>Responsive design / Very good</td>
     </tr>
     <tr>
-       <td>Edge</td>
-       <td>iPad 7 and Desktop Macook Pro</td>
-      <td>All the pages format correctly. The links, nav and form all work well.</td>
+       <td>Safari</td>
+       <td>iPad 10 and Desktop Macook Pro</td>
+      <td>All the pages format correctly. Game functionality and buttons work well.</td>
       <td>Responsive design / Very good</td>
     </tr>
     <tr>
-      <td>Firefox</td>
-      <td>iPhone 15 and Desktop Macbook Air</td>
-      <td>All the pages format correctly. The links, nav and form all work well.</td>
+      <td>Edge</td>
+      <td>Galaxy Z Fold 5 and Desktop Macbook Air</td>
+      <td>All the pages format correctly. Game functionality and buttons work work well.</td>
       <td>Responsive design / Very good</td>
     </tr>
  
@@ -236,15 +235,15 @@ I used ['Browser Stack'](https://live.browserstack.com/dashboard#os=Windows&os_v
   <tbody>
     <tr>
       <td>Galaxy Fold</td>
-      <td>Left banner text working well, movile nav bar formats correctly. All images display.</td>
+      <td>Game work, and display is correct. All images and buttons display.</td>
       <td>When rotated landscape, designed images are removed from 'Classes' page to save space and speed.</td>
       <td>N/A</td>
       <td>N/A</td>
     </tr>
     <tr>
-       <td>iPhone 6/7/8 Plus</td>
-       <td>Left banner text working well, movile nav bar formats correctly. All images display.</td>
-      <td>When rotated landscape, images format wider but the nav bar remains as a dropdown to save space. Designed images are removed from 'Classes' page</td>
+       <td>iPhone 15 </td>
+       <td>Game work, and display is correct. All images and buttons display.</td>
+      <td>All game functions display and work when rotated.</td>
       <td>N/A</td>
       <td>N/A</td>
     </tr>
@@ -252,23 +251,24 @@ I used ['Browser Stack'](https://live.browserstack.com/dashboard#os=Windows&os_v
       <td>iPad Air</td>
       <td>N/A</td>
       <td>N/A</td>
-      <td>Nav bar becomes extended with additional space. Designed images removed from 'Classes' page. Images and text areas formated with additional padding. Homepage banner full width success.</td>
-      <td>When rotated landscape, features remain working well. Fonts increase due to screen size.</td>
+      <td>Game functions work and buttons and icons displayed in full.</td>
+        <td>N/A</td>
     </tr>
     <tr>
     <td>Macbook Air</td>
     <td>N/A</td>
     <td>N/A</td>
     <td>N/A</td>
-    <td>Features are centered to the desktop page, images resized to not overstretch and homepage banner CTA is centered. Nav bar is extended for easier use.</td>
+    <td>Full display of the game, larger icons and game function works well.</td>
  
   </tbody>
 </table>
 
 ## Device Formats
-![pixel-phone](assets/images/brighton-beach-pixel.png)
-![ipad](assets/images/brighton-beach-ipad-homepage.png)
-![desktop](assets/images/brighton-beach-classes-desktop1.png)
+![iphone 15](assets/images/pwf.iphone.png)
+![ipad](assets/images/pwf.ipad.png)
+![galaxy phone](assets/images/pwf.galaxy.png)
+
 
 ## Code Validation
 ### HTML Validation
