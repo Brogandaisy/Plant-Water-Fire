@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,15 +10,13 @@
     <link rel='icon' type='image/x-icon' href='assets/images/pwf-favicon.png'>
     <title>Plant, Water, Fire!</title>
 </head>
-
 <body>
     <h1 id="heading">Plant - Water - Fire!</h1>
     <div class="introText">
-    <h2>Can you beat the computer?</h2>
-    <h3>First player to get a score of <b>10 WINS!</b></h3>
+        <h2>Can you beat the computer?</h2>
+        <h3>First player to get a score of <b>10 WINS!</b></h3>
     </div>
     <button id="myInstructions" class="hoverButton">Instructions</button>
-
     <div id="myModal" class="modal">
         <div id="instructionsArea">
             <h2>Plant - Water - Fire!</h2>
@@ -37,35 +34,21 @@
             <span class="close">Click to PLAY!</span>
         </div>
     </div>
-
     <div class="game-area">
-        <div class="choices">
-            <button onclick="playGame('Plant')"><img src="assets/images/plant.png" alt="plant"></button>
-            &nbsp;
-            <button onclick="playGame('Water')"><img src="assets/images/water.png" alt="water"></button>
-            &nbsp;
-            <button onclick="playGame('Fire')"><img src="assets/images/fire.png" alt="fire"></button>
-        </div>
-
+        <div class="choices"></div>
         <div id="playersDisplay">Your Choice:</div>
         <div id="computersDisplay">Computers Choice:</div>
         <div id="resultDisplay"></div>
     </div>
-
     <div id="scoreArea">
         <div class="scoreTally">Your Score:
             <span id="playersScoreDisplay">0</span>
         </div>
-
         <div class="scoreTally">Computer Score:
             <span id="computersScoreDisplay">0</span>
         </div>
     </div>
-
     <button class="hoverButton" onclick="window.location.reload();">Restart the Game</button>
-
     <script src="assets/javascript/script.js"></script>
-
 </body>
-
 </html>
