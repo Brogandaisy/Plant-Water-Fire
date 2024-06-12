@@ -16,6 +16,8 @@
         <h2>Can you beat the computer?</h2>
         <h3>First player to get a score of <b>10 WINS!</b></h3>
     </div>
+    
+    <!-- Instructions text and button for modal pop-up --> 
     <button id="myInstructions" class="hoverButton">Instructions</button>
     <div id="myModal" class="modal">
         <div id="instructionsArea">
@@ -34,6 +36,8 @@
             <span class="close">Click to PLAY!</span>
         </div>
     </div>
+
+    <!-- Display area for the players selected choice, and computers random choice -->
     <div class="game-area">
         <div class="choices"></div>
         <div id="playersDisplay">Your Choice:</div>
@@ -48,6 +52,7 @@
             <span id="computersScoreDisplay">0</span>
         </div>
     </div>
+    <!-- Restart the game button -->
     <button class="hoverButton" onclick="window.location.reload();">Restart the Game</button>
     <script src="assets/javascript/script.js"></script>
 </body>

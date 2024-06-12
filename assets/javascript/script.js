@@ -9,6 +9,11 @@ const playersScoreDisplay = document.getElementById("playersScoreDisplay");
 const computersScoreDisplay = document.getElementById("computersScoreDisplay");
 let playerScore = 0;
 let computerScore = 0;
+
+/**
+ * 
+ * @param {When the player selects an icon it determines if they have won against the computers random choice.} playersChoice 
+ */
 function playGame(playersChoice) {
     const computersChoice = choices[Math.floor(Math.random() * 3)];
     let result = "";
@@ -27,6 +32,10 @@ function playGame(playersChoice) {
                 break;
         }
     }
+
+    /**
+     * Updates players and computers scores when they get a particular message after they choose their icon.
+     */
     playersDisplay.textContent = `You Chose: ${playersChoice}`;
     computersDisplay.textContent = `Computer Chose: ${computersChoice}`;
     if (result === "You WIN!") {
@@ -40,6 +49,10 @@ function playGame(playersChoice) {
     resultDisplay.textContent = result;
     checkWinner(); // Check for a winner after updating the scores
 }
+
+/**
+ * Checks if either player or computer has reached a score of 10 and displays the winning message.
+ */
 function checkWinner() {
     if (playerScore === 10) {
         resultDisplay.textContent = "You win the game!";
@@ -49,18 +62,32 @@ function checkWinner() {
         resetGame();
     }
 }
+
+/**
+ * Resets the game scores.
+ */
 function resetGame() {
     playerScore = 0;
     computerScore = 0;
     updatePlayerScore();
     updateComputerScore();
 }
+/**
+ *  Updates the players score when they see 'You WIN!'.
+ */
 function updatePlayerScore() {
     playersScoreDisplay.innerText = playerScore.toString();
 }
+/**
+ *  Updates the computers score when they see 'You LOSE!'.
+ */
 function updateComputerScore() {
     computersScoreDisplay.innerText = computerScore.toString();
 }
+
+/**
+ * When the 'Intructions' button is clicked, a pop-up/modal is created displaying the instructions for the player.
+ */
 btn.onclick = function() {
     modal.style.display = "block";
 }
@@ -72,6 +99,7 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
 // Create choice buttons dynamically using a forEach loop
 const choicesContainer = document.querySelector('.choices');
 choices.forEach(choice => {
